@@ -1,3 +1,15 @@
+<?php
+	require_once "clases/Conexion.php";
+	$obj = new conectar();
+	$conexion = $obj->conexion();
+
+	$sql = "SELECT *FROM Usuario where Es_admin = 1";
+	$result = mysqli_query($conexion,$sql);
+	$validar = 0;
+	if (mysqli_num_rows($result) > 0) {
+		$validar = 1;
+	}
+ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,6 +17,8 @@
 		<title>Syscontrol-pnc</title>
 		<link rel="stylesheet" href="librerias/bootstrap/css/bootstrap.css">
 		<script src="librerias/jquery-3.2.1.min.js"></script>
+		<script src="js/funciones.js"></script>
+		<script src="js/login.js"></script>
 	</head>
 	<body style="background-color: black">
 		<br><br><br><br>
@@ -26,8 +40,11 @@
 									<label for="">Contraseña</label>
 									<input type="password" class="form-control input-sm"name="Password" id="Password">
 									<p></p>
-									<span class="btn btn-primary btn-sm">Login</span>
-									<a href="registro.php" class="btn btn-danger btn-sm">Registrar</a>
+									<span class="btn btn-primary btn-sm" id="Login">Login</span>
+
+									<?php if (!$validar):  ?>
+										<a href="registro.php" class="btn btn-danger btn-sm">Registrar</a>
+									<?php endif; ?>	
 							</form>
 						</div>
 					</div>

@@ -6,7 +6,7 @@ require_once '../../clases/Usuarios.php';
 	$pass = sha1($_POST['Password']);
 	$rol = $_POST['RolSelect'];
 	$nombre = $_POST['Nombre'];
-	$correo = $_POST['Correo'];
+	$email = $_POST['Email'];
 	$empleado = $_POST['EmpleadoSelect'];
 
 	$datos=array(
@@ -14,7 +14,7 @@ require_once '../../clases/Usuarios.php';
 					$pass,
 					$rol,
 					$nombre,
-					$correo,
+					$email,
 					$empleado);
 
 	$obj = new usuarios();
