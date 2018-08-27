@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+ 
   $('#Registro').click(function(){
 
     vacios = validarFormVacio('formRegistro');

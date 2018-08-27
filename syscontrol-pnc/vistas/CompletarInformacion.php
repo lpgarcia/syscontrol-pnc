@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if(isset($_SESSION['usuario'])){
+	if(isset($_SESSION['usuario']) and $_SESSION['usuario'] == 'admin'){
 
  ?>
 
@@ -18,6 +18,6 @@
 
 <?php
 }else{
-	header("../index.php");
+	header('location:../index.php');
 }
  ?>

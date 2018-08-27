@@ -34,15 +34,15 @@ if (isset($_SESSION['usuario'])) {
               </li>
 
 
-            </li>
+			  </lheader("../index.php");i>
 
 				<?php
             if($_SESSION['usuario']=="admin"):
              ?>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Empleados<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Personal<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="nuevoEmpleado.php">Nuevo</a></li>
+                <li><a href="nuevoEmpleado.php">Ingresar Personal</a></li>
                 <li><a href="CompletarInformacion.php">Completar Informacion</a></li>
               </ul>
             </li>
@@ -63,7 +63,7 @@ if (isset($_SESSION['usuario'])) {
 				<?php
 				if($_SESSION['usuario']=="admin"):
 				 ?>
-				 <li><a href="destino.php"><span class="glyphicon glyphicon-share"></span> Destino</a>
+				 <li><a href="baja.php"><span class="glyphicon glyphicon-share"></span> Baja</a>
             </li>
 				<?php
           endif;

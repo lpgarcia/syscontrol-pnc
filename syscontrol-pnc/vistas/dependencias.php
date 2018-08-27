@@ -10,3 +10,6 @@
 <script src="../librerias/alertifyjs/alertify.js" charset="utf-8"></script>
 <script src="../librerias/bootstrap/js/bootstrap.js" charset="utf-8"></script>
 <script src="../librerias/select2/js/select2.js" charset="utf-8"></script>
+
+<script src="../js/funciones.js" charset="utf-8"></script>
+<script src="../js/usuario.js" charset="utf-8"></script>

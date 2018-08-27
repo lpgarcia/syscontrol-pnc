@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if(isset($_SESSION['usuario'])){
+	if(isset($_SESSION['usuario']) and $_SESSION['usuario'] == 'admin'){
 
  ?>
 
@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Destino</title>
+		<title>Dar de Baja</title>
 		<?php require_once "menu.php"; ?>
 	</head>
 	<body>

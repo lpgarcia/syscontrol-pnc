@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$('#Login').click(function(){
 
 		vacios = validarFormVacio('formLogin');
