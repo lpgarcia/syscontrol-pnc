@@ -11,7 +11,7 @@ if (isset($_SESSION['usuario'])) {
     <meta charset="utf-8">
     <title>MENU </title>
   </head>
-  <body  style="background-color: beige;">
+  <body  style="background-color: #4F9BB6;">
     <!-- Begin Navbar -->
     <div id="nav">
       <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
