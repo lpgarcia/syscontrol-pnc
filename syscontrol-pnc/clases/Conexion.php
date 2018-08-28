@@ -3,7 +3,7 @@
         private $servidor = 'localhost';
         private $usuario = 'syscontrolpnc';
         private $password = 'Syscontrol-PNC1';
-        private $bd = 'sys_ControlPNC';
+        private $bd = 'pncsm';
 
         public function conexion(){
             $conexion = mysqli_connect($this->servidor,

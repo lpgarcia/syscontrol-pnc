@@ -25,7 +25,7 @@
 			$conexion = $c->conexion();
 
 			$sql = "SELECT id_Empleado,Nombre1, Apellido1, Nip
-								FROM Empleado";
+								FROM empleado";
 			$result = mysqli_query($conexion,$sql);
 	  ?>
 	</head>
@@ -66,7 +66,7 @@
 			                       <option value="A">Seleccione un Empleado</option>
 										  <option value="0">Sin Empleados</option>
 			  <?php while($ver=mysqli_fetch_row($result)): ?>
-			  							<option value="<?php echo $ver[0] ?>"><?php echo $ver[1]." ".$ver[2]." ".$ver[3] ?></option>
+			  							<option value="<?php echo $ver[0] ?>"><?php echo $ver[1]." ".$ver[2]." ".$ver[3]."-P" ?></option>
 			  <?php endwhile; ?>
 			                   </select>
 

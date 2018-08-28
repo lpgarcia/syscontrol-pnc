@@ -7,9 +7,9 @@
 			$c = new conectar();
          $conexion= $c->conexion();
 
-        $sql = "INSERT INTO Usuario(id_Usuario,
+        $sql = "INSERT INTO usuario(id_Usuario,
 			  Usuario,
-			  Contrasenia,
+			  Contraseña,
 			  Es_admin,
 			  Nombre,
 			  Correo,
@@ -101,7 +101,7 @@
 
 			$delete = "DELETE FROM Usuario
 									WHERE id_Usuario = '$idUsuario'";
-			return mysqli_query($conexion,$delete);							
+			return mysqli_query($conexion,$delete);
 		}
 	}
  ?>
