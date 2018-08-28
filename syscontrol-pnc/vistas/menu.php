@@ -23,7 +23,7 @@ if (isset($_SESSION['usuario'])) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-				<a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail" src="../img/pnc.jpg" alt="" width="150px" height="150px"></a>
+				<a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail" src="../img/pnc.jpg" alt="" width="110px" height="110px"></a>
           </div>
 
           <div id="navbar" class="collapse navbar-collapse">

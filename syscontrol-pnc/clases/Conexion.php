@@ -1,8 +1,8 @@
 <?php
     class conectar{
         private $servidor = 'localhost';
-        private $usuario = 'root';
-        private $password = '*Deleonsocgio10';
+        private $usuario = 'syscontrolpnc';
+        private $password = 'Syscontrol-PNC1';
         private $bd = 'sys_ControlPNC';
 
         public function conexion(){

@@ -12,7 +12,11 @@
 		<?php require_once "menu.php"; ?>
 	</head>
 	<body>
-		<div class="conteiner">
+	<div class="conteiner">
+		<form id="formEmpleados">
+
+
+
 <!-- fila para titulo -->
 			<div class="row">
 				<div class="col-sm-4"></div>
@@ -110,7 +114,7 @@
 
 <!-- fila para segunda parte del formulario -->
 			<div class="row">
-				<br><br>
+				<br>
 				<div class="col-sm-2">
 
 				</div>
@@ -124,7 +128,7 @@
 
 				<div class="col-sm-3">
 					<hr>
-					<br><br>
+					<br>
 					<label for="">Municipio</label>
 					<input type="text"class="form-control input-sm" name="" id="">
 				</div>
@@ -142,7 +146,7 @@
 
 <!-- fila para Tercera parte del formulario -->
 						<div class="row">
-							<br><br>
+							<br>
 							<div class="col-sm-2">
 
 							</div>
@@ -165,7 +169,7 @@
 
 							<div class="col-sm-3">
 								<hr>
-								<br><br>
+								<br>
 								<label for="">Partida Presupuestaria</label>
 								<input type="text"class="form-control input-sm" name="" id="">
 
@@ -199,8 +203,18 @@
 
 						</div>
 
-
-		</div>
+<!-- fila para los botones -->
+						<div class="row">
+							<br><br>
+							<div class="col-sm-3"></div>
+							<div class="col-sm-4">
+								<span class="btn btn-default" id="empleadoRegistro">Registrar Empleado</span>
+							</div>
+							<div class="col-sm-4"></div>
+						</div>
+						<br><br>
+      </form>
+	</div>
 	</body>
 </html>
 
