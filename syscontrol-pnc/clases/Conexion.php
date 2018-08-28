@@ -1,5 +1,7 @@
 <?php
     class conectar{
+
+//por favor compañeros crean un usuario para la bd, con los datos siguientes		 
         private $servidor = 'localhost';
         private $usuario = 'syscontrolpnc';
         private $password = 'Syscontrol-PNC1';

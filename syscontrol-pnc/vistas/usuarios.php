@@ -38,6 +38,16 @@
 						<label for="">Correo</label>
 						<input type="text" class="form-control input-sm" name="Email" id="Email">
 
+<?php
+include_once "../clases/Conexion.php";
+$obj = new conectar();
+$conexion = $obj->conexion();
+
+$consultaEmpl = "SELECT id_Empleado,Nombre1, Apellido1, Nip
+					FROM empleado";
+$result = mysqli_query($conexion,$consultaEmpl);					
+ ?>
+
 						<label for="">Empleado</label>
 						  <select class="form-control input-sm " id="EmpleadoSelect" name="EmpleadoSelect">
 								  <option value="A">Seleccione un Empleado</option>

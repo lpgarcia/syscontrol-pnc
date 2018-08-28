@@ -7,13 +7,13 @@
 			$c = new conectar();
          $conexion= $c->conexion();
 
-        $sql = "INSERT INTO usuario(id_Usuario,
+        $sql = "INSERT INTO Usuario(
 			  Usuario,
-			  Contraseña,
+			  Contrasenia,
 			  Es_admin,
 			  Nombre,
 			  Correo,
-			  Empleado_id_Empleado) VALUES (NULL,
+			  Empleado_id_Empleado) VALUES (
 			  											  '$datos[0]',
 														  '$datos[1]',
 														  '$datos[2]',
