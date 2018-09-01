@@ -5,7 +5,7 @@
          $conexion= $c->conexion();
 
 			$insertEmpleado ="INSERT INTO Empleado
-											 VALUES(null,
+											 VALUES(NULL,
 												 '$datos[0]',
 												 '$datos[1]',
 												 '$datos[2]',
@@ -30,9 +30,9 @@
 												 '$datos[21]',
 												 '$datos[22]',
 												 '$datos[23]' )";
+
 			$query = mysqli_query($conexion,$insertEmpleado);
 			return $query;
-
 		}
 	}
 

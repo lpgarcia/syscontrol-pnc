@@ -26,8 +26,8 @@
   $Tiemposervicio = $_POST['TiempoServicio'];
   $Fecha_altacomis= $_POST['FechaAlta'];
   $Dar_baja= 0;
-  $Profesion_idProfesion= $_POST['3'];
-  $Aldea_idAldea= $_POST['Aldea'];
+  $Profesion_idProfesion= 1;
+  $Aldea_idAldea= 1;
 
 $datos = array(
 	$Nombre1,
@@ -58,6 +58,4 @@ $datos = array(
 
 	$obj = new empleados();
 	echo $obj->registroEmpleado($datos);
-
-
  ?>

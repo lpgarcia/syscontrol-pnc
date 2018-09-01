@@ -15,7 +15,6 @@ $(document).ready(function(){
         url: "../procesos/empleados/registrarEmpleado.php",
         success:function(r){
               if (r == 1) {
-
                    alertify.success("agregado con exito");
               } else {
                    alertify.error("Fallo al agregar");
