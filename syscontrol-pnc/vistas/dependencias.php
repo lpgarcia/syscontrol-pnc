@@ -13,3 +13,4 @@
 
 <script src="../js/funciones.js" charset="utf-8"></script>
 <script src="../js/usuario.js" charset="utf-8"></script>
+<script src="../js/empleado.js" charset="utf-8"></script>

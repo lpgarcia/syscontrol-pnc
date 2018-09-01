@@ -25,7 +25,7 @@
 			$conexion = $c->conexion();
 
 			$sql = "SELECT id_Empleado,Nombre1, Apellido1, Nip
-								FROM empleado";
+								FROM Empleado";
 			$result = mysqli_query($conexion,$sql);
 	  ?>
 	</head>

@@ -13,7 +13,7 @@
 			  Es_admin,
 			  Nombre,
 			  Correo,
-			  Empleado_id_Empleado) VALUES (
+				  Empleado_id_Empleado) VALUES (NULL,
 			  											  '$datos[0]',
 														  '$datos[1]',
 														  '$datos[2]',

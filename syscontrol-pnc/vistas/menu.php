@@ -11,7 +11,7 @@ if (isset($_SESSION['usuario'])) {
     <meta charset="utf-8">
     <title>MENU </title>
   </head>
-  <body  style="background-color: #4F9BB6;">
+  <body  style="background-color: #428bca;">
     <!-- Begin Navbar -->
     <div id="nav">
       <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
@@ -23,8 +23,10 @@ if (isset($_SESSION['usuario'])) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+<!--
 				<a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail" src="../img/pnc.jpg" alt="" width="110px" height="110px"></a>
-          </div>
+-->
+			 </div>
 
           <div id="navbar" class="collapse navbar-collapse">
 
@@ -77,6 +79,15 @@ if (isset($_SESSION['usuario'])) {
 				<?php
           endif;
              ?>
+
+				 <?php
+ 				if($_SESSION['usuario']=="admin"):
+ 				 ?>
+             <li><a href="destino.php"><span class="glyphicon glyphicon-share-alt"></span> Destino</a>
+             </li>
+ 				<?php
+           endif;
+              ?>
 
 				<li><a href="reportes.php"><span class="glyphicon glyphicon-duplicate"></span> Reportes</a>
 				</li>
